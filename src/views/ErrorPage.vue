@@ -23,9 +23,15 @@ export default class Error extends Vue {
   get error(): string {
     return this.$store.getters.error;
   }
+  
   /** Mounted */
   mounted() {
     this.$store.dispatch('setLoading', false);
+  }
+   data() {
+    return {
+      count: 1
+    }
   }
 }
 </script>

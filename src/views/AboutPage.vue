@@ -1,13 +1,30 @@
 <template>
   <v-container class="about">
-    <h1>This is an about page</h1>
+    <h1>This is an aboutdfsa page</h1>
+    <v-btn @click="contador(10)">suma</v-btn>
+    {{count}} 
   </v-container>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+
+
 /** Home */
-export default class About extends Vue {}
+export default  {
+    data() {
+    return {
+      count: 0 as number, 
+    }
+  },
+  methods: {
+    contador(numero : number){
+  
+     return numero ++
+     
+    }
+  }
+}
+
+
 </script>

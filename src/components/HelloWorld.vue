@@ -90,7 +90,8 @@ export default class HelloWorld extends Vue {
   /** Meta information */
   meta: MetaInterface = Meta;
 
-  /** Whats next */
+ 
+  
   whatsNext: Record<string, string>[] = [
     {
       text: 'Explore components',
@@ -149,5 +150,12 @@ export default class HelloWorld extends Vue {
   /** Message */
   @Prop({ type: String, default: undefined })
   readonly msg!: string;
+  data() {
+    return {
+      count: 1
+    }
+  }
+  
 }
+
 </script>
