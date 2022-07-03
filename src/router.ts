@@ -11,6 +11,7 @@ import store from '@/store';
 import ErrorPage from '@/views/ErrorPage.vue';
 import AboutPage from '@/views/AboutPage.vue';
 import HomePage from '@/views/HomePage.vue';
+import PruebaPage from '@/views/PruebaPage.vue';
 
 /** Router Config */
 const routes: RouteConfig[] = [
@@ -29,6 +30,11 @@ const routes: RouteConfig[] = [
     name: 'Error',
     component: ErrorPage,
   },
+  {
+    path: '/prueba',
+    name: 'Prueba',
+    component: PruebaPage,
+  }
 ];
 
 const router: Router = createRouter({
