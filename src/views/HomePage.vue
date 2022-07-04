@@ -255,7 +255,7 @@ export default class Home extends Vue {
     return 'method';
   }
   */
-  computed(): string {
+  get computed(): string {
     return this.$store.getters.computed;
     this.formTitle()
   }
