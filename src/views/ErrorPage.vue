@@ -28,10 +28,6 @@ export default class Error extends Vue {
   mounted() {
     this.$store.dispatch('setLoading', false);
   }
-   data() {
-    return {
-      count: 1
-    }
-  }
+ 
 }
 </script>
